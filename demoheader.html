@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<div lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"   />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .body{
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+            }
+
+            header {
+                height:  50px;
+                width: 100%;
+                display: flex;
+                position: fixed;
+                z-index: 3;
+                background-color: red;
+            }
+
+            .navbar {
+                height: 50px;
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .nav-links {
+                display: flex;
+                list-style: none;
+                gap: 20px;
+                justify-content: end;
+                align-items: center;
+                font-size: 30px;
+            }
+
+            .img {
+                height: 100vh;
+                width: 100vw;
+                position: relative;
+            }
+
+            span {
+                font-size: 40px;
+                font-style: italic;
+                color: chartreuse;
+            }
+
+            .overlay {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                background-color: red;
+                opacity: 0.3;
+            }
+
+            .text {
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                flex-direction: column;
+                font-size: 20px;
+                padding: 150px 150px;
+            }
+
+            .text p {
+                gap: 10px;
+                color: red;
+            }
+
+            li:hover {
+                background-color: darkorange;
+            }
+            .banner{
+                height: 100%;
+                width: 100%;
+                position: relative;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <span> ADAPT</span>
+                <ul class="nav-links">
+                    <li> About</li>
+                    <li> Research</li>
+                    <li> Publication</li>
+                    <li> Industry</li>
+                    <li> Outreach</li>
+                    <li> News</li>
+                    <li> Jobs</li>
+                    <li> <i class="fa-solid fa-magnifying-glass"></i> </li>
+                    <li> WORK WITH US</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="banner">
+            <img class="img" src="./images/Beach.jpg" />
+            <div class="overlay">
+            </div>
+            <div class="text">
+                <h1> ADAPT is a dynamic research centre in Dublin with experts producing ground-breaking digital content
+                    innovations for industry.</h1>
+                <p> <u> PLAY VIDEO</u> </p>
+            </div>
+        </div>
+
+    </body>
+
+    </html>

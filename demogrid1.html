@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+        }
+        .con-grid{
+            height: 100%;
+            width: 100%;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+             "a a b b"
+             "c c d d"
+             "c c d d";
+        }
+        .A{
+            grid-area: a;
+            background-color: gray;
+        }
+         .B{
+            grid-area: b;
+            background-color: gray;
+         }
+        .C {
+            grid-area: c;
+            background-color: gray;
+        }
+        .D {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "e e"
+            "f g";
+            grid-area: d;
+            background-color: gray;
+        }
+        .D .E{
+            grid-area: e ;
+            background-color: purple;
+        }
+        .D .F{
+            grid-area: f;
+            background-color: purple;
+        }
+        .D .G{
+            grid-area: g;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="con-grid">
+        <div class="A">
+            <h1>a</h1>
+        </div>
+        <div class="B"> 
+            <h1>b</h1>
+        </div>
+        <div class="C">
+            <h1>c</h1>
+        </div>
+        <div class="D">
+            <div class="E">
+                <h1>e</h1>
+            </div>
+            <div class="F">
+                <h1>f</h1>
+            </div>
+            <div class="G">
+                <h1>g</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .con-grid {
+            height: 100%;
+            width: 100%;
+            perspective: 1000px;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "a a b e"
+                "c d b e";
+            overflow: hidden;
+        }
+
+        .A, .B, .C, .D, .E {
+            background-color: gray;
+            border-radius: 10px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .A {
+            grid-area: a;
+        }
+
+        .B {
+            grid-area: b;
+        }
+
+        .C {
+            grid-area: c;
+        }
+
+        .D {
+            grid-area: d;
+        }
+
+        .E {
+            grid-area: e;
+        }
+
+        .A:hover, .B:hover, .C:hover, .D:hover, .E:hover {
+            transform: rotateY(180deg);
+        }
+
+        .a1, .a2, .b1, .b2, .c1, .c2, .d1, .d2, .e1, .e2 {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .a2, .b2, .c2, .d2, .e2 {
+            transform: rotateY(180deg);
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="con-grid">
+        <div class="A">
+            <div class="a1">
+                <img src="./images/img.jpg" alt="Image 1">
+            </div>
+            <div class="a2">
+                <img src="./images/colorful.jpg" alt="Image 2">
+            </div>
+        </div>
+        <div class="B">
+            <div class="b1">
+                <img src="./images/forest.png" alt="Forest">
+            </div>
+            <div class="b2">
+                <img src="./images/ai.png" alt="AI">
+            </div>
+        </div>
+        <div class="C">
+            <div class="c1">
+                <img src="./images/pexels-riv.jpg" alt="AI">
+            </div>
+            <div class="c2">
+                <img src="./images/forest.png" alt="Forest">
+            </div>
+        </div>
+        <div class="D">
+            <div class="d1">
+                <img src="./images/pexels-girl.jpg" alt="Rose">
+            </div>
+            <div class="d2">
+                <img src="./images/rose.jpg" alt="Image 1">
+            </div>
+        </div>
+        <div class="E">
+            <div class="e1">
+                <img src="./images/rose1.jpg" alt="Rose 1">
+            </div>
+            <div class="e2">
+                <img src="./images/rose.jpg" alt="Rose">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

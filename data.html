@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-base{
+            background-color: blue;
+            height: 100vh;
+            width: 100vw;
+            align-items: center;
+            display: flex;
+            gap: 40px;
+        }
+        .base-item{
+            /* background-color:red; */
+            background-image: url("./images/tech.jpg");
+            background-size: cover;
+            height: 50%;
+            flex-grow: 1;
+        }
+        .overlay{
+            height: 100%;
+            width: 100%;
+            justify-content: center; 
+            background-color: chartreuse;
+            padding: 10px; 
+            opacity: 0.5;
+            transition: opacity 0.1s;
+        }
+        .base-item:hover .overlay{
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+   <div class="main-base">
+    <div class="base-item">
+        <div class="overlay"> 
+            <h1> Hello</h1>
+        </div>
+    </div>
+    <div class="base-item">
+        <div class="overlay">
+            <h3> I am dimpal</h3>
+        </div>
+    </div>
+    <div class="base-item">
+        <div class="overlay">
+            <h3> TYBCA</h3>
+        </div>
+    </div>
+   </div> 
+</body>
+</html>

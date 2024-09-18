@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: blueviolet;
+        }
+        .con-grid{
+            height: 100%;
+            width: 100%;
+            display: grid;
+            gap: 30px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 70px 1fr auto;
+            grid-template-areas: 
+            "home home home"
+            "gallery garden garden"
+            "footer footer footer";
+        }
+        .Room{
+            grid-area: home;
+            background-color: yellowgreen;
+        }
+        .side-space{
+            grid-area: gallery;
+            background-color: brown;
+        }
+        .parking{
+            grid-area: garden;
+            background-color: blue;
+        }
+        .footer{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="con-grid">
+        <div class="Room">
+            <h1> home</h1>
+        </div>
+        <div class="side-space">
+            <h1> gallery</h1>
+        </div>
+        <div class="parking">
+            <h1> garden</h1>
+        </div>
+        <div class="footer">
+            <h1>footer</h1>
+        </div>
+    </div>
+</body>
+</html>

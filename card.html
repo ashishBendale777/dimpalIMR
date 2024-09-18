@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body-container {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            /* background-color: blue; */
+            gap: 20px;
+        }
+
+        .item {
+            position: relative;
+            height: 300px;
+            flex-grow: 1;
+        }
+
+        .card {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            background-image: linear-gradient(#f000, #ff0000, #fff000);
+            display: flex;
+            align-items: end;
+            transition: opacity 1s;
+            opacity: 0;
+        }
+
+        .item:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body-container">
+        <div class="item">
+            <img class="card" src="./images/Beach.jpg" />
+            <div class="overlay">
+                <h1>hii</h1>
+            </div>
+        </div>
+        <div class="item">  
+            <img class="card" src="./images/city.jpg">
+            <div class="overlay">
+                <h1>hii</h1>
+            </div>
+        </div>
+        <div class="item">
+            <img class="card" src="./images/tech.jpg">
+            <div class="overlay">
+                <h1>hii</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

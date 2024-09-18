@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+        }
+
+        .color1 {
+            height: 100vh;
+            width: 25%;
+            background-color: red;
+            position: relative;
+        }
+
+        .color2 {
+            height: 100%;
+            width: 75%;
+            background-color: blue;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+        }
+
+        .navbar {
+            height: 30px;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            margin-left: 900px;
+            font-size: 40px;
+            background-color: red;
+        }
+
+        .imgcard {
+            height: 400px;
+            width: 300px;
+            position: absolute;
+            left: 60%;
+            top: 20%;
+            z-index: 1;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 90px;
+        }
+
+        .color1 h1 {
+            padding-left: 50%;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color1">
+        <h1> Yanya </h1>
+        <img class="imgcard" src="./images/tech.jpg" />
+    </div>
+    <div class="color2">
+        <nav class="navbar">
+            <ul>
+                <li> Home </li>
+                <li> Portfollo</li>
+                <li> About </li>
+                <li> Connect </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1> I'm Yanya </h1>
+            <span>Website Developer</span>
+            <p> I have been in digital marketing industry
+                from past 5 years and
+                have worked with more than
+                twenty client across the country.</p>
+            <div class="icon">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

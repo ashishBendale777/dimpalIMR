@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: blueviolet;
+            height: 70px;
+            width: 100%;
+            /* padding: 10px; */
+            display: flex;
+        }
+
+        .navbar {
+            height: 10px;
+            display: flex;
+            align-self: center;
+            justify-content: end;
+            flex-grow: 1;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            justify-content: end;
+            list-style: none;
+            font-size: 30px;
+            align-self: center;
+
+        }
+
+        li:hover {
+            background-color: white;
+            color: blue;
+
+        }
+
+        h1 {
+            align-items: center;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Brand Logo</h1>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li>home</li>
+                <li>about</li>
+                <li>services</li>
+                <li>contact</li>
+                <li>blog</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

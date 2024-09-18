@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-container{
+            height: 80%;
+            width: 80%;
+            /* background-color: blue;  */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card-item{
+            height: 100%;
+            flex-grow: 1;
+            background-image: url("./images/bigcity.jpg");
+            /* background-color: blueviolet; */
+            color: transparent;
+            position: relative;
+            overflow-x: hidden;
+            display: flex;
+            /* align-items: center; */
+            justify-content: end;
+            flex-direction: column;
+            transition: 2s;
+            padding-bottom: 80px;
+            padding-left: 40px;
+        }
+        .overlay{
+            width: 100%;
+            height: 100%;
+            color: transparent;
+            position: absolute;
+            bottom: 0;  
+            transform: translateY(100%);
+            opacity: 0.4;
+            transition: 2s;
+        }
+
+         .card-item:hover .overlay{ 
+            transform: translateY(0);
+            background-color: rgb(180, 123, 233);
+            color: white;
+        
+        }.card-item:hover{
+            color: white;
+
+        }
+        .card-item p{
+            
+            font-size: 20px;
+        }
+        .card-item h1{
+            font-size: 50px;
+        }
+
+     </style>
+    
+</head>
+<body>
+    <div class="card-container">
+        <div class="card-item">
+            <h1> The Beach</h1>
+            <p> Quasi non molestias odio.Lorem ipsum</p>
+            <p> dolor sit amet consectetur adipisicing </p>
+            <p> elit. Dignissimos excepuri nostrum necessitatibus doloremque?</p>
+            <div class="overlay">
+            </div>
+        </div>
+        <div class="card-item">
+            <h1> The Beach</h1>
+            <p> Quasi non molestias odio.Lorem ipsum</p>
+            <p> dolor sit amet consectetur adipisicing </p>
+            <p> elit. Dignissimos excepuri nostrum necessitatibus doloremque?</p>
+           <div class="overlay">
+           </div>
+       </div>
+        </div>
+    </div>   
+</body>
+</html>
